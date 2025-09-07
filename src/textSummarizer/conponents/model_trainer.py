@@ -2,6 +2,7 @@ from transformers import TrainingArguments, Trainer
 from transformers import DataCollatorForSeq2Seq
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from datasets import load_dataset, load_from_disk
+from evaluate import load as load_metric
 from textSummarizer.entity import ModelTrainerConfig
 import torch
 import os
@@ -35,7 +36,7 @@ class ModelTrainer:
             output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
             per_device_train_batch_size=1, per_device_eval_batch_size=1,
             weight_decay=0.01, logging_steps=10,
-            evaluation_strategy='steps', eval_steps=500, save_steps=1e6,
+            eval_strategy='steps', eval_steps=500, save_steps=1e6,
             gradient_accumulation_steps=16
         ) 
 
