@@ -1,0 +1,328 @@
+[2025-09-07 12:41:55,706: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 12:41:55,708: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:41:55,709: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:41:55,710: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\utils\common.py", line 30, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "E:\Text-Summarization-NLP-Project\venv\Lib\site-packages\box\box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 18, in <module>
+    data_ingestion.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Text-Summarization-NLP-Project\venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\utils\common.py", line 32, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-09-07 12:43:39,539: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 12:43:39,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:43:39,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:43:39,566: INFO: common: created directory at: artifacts]
+[2025-09-07 12:43:39,579: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 12:43:43,482: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7FE9:726D1:1A8C62:48E371:68BD306E
+Accept-Ranges: bytes
+Date: Sun, 07 Sep 2025 07:12:51 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10231-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1757229170.072572,VS0,VE976
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 27760575d92a5b9a31094b3b4c107af5de6e8906
+Expires: Sun, 07 Sep 2025 07:17:51 GMT
+Source-Age: 1
+
+]
+[2025-09-07 12:43:44,053: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 12:57:27,240: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 12:57:27,254: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:57:27,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:57:27,266: INFO: common: created directory at: artifacts]
+[2025-09-07 12:57:27,298: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 12:57:30,421: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7FE9:726D1:1A8C62:48E371:68BD306E
+Accept-Ranges: bytes
+Date: Sun, 07 Sep 2025 07:26:37 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10235-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1757229998.649035,VS0,VE261
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8213a7a6cedc78f29cd069418aa83506c5cfd2c2
+Expires: Sun, 07 Sep 2025 07:31:37 GMT
+Source-Age: 0
+
+]
+[2025-09-07 12:57:30,883: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 12:57:30,883: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-09-07 12:57:30,885: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:57:30,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:57:30,888: INFO: common: created directory at: artifacts]
+[2025-09-07 12:57:30,897: INFO: common: created directory at: artifacts/data_validation]
+[2025-09-07 12:57:30,931: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 12:57:30,931: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-09-07 12:57:30,934: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:57:30,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:57:30,936: INFO: common: created directory at: artifacts]
+[2025-09-07 12:57:30,946: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-07 12:57:39,048: WARNING: fingerprint: Parameter 'function'=<function DataTransformation.convert_examples_to_features at 0x000001593A460540> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.]
+[2025-09-07 12:57:43,720: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 12:57:43,721: INFO: main: *******************]
+[2025-09-07 12:57:43,721: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-09-07 12:57:43,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 12:57:43,725: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 12:57:43,727: INFO: common: created directory at: artifacts]
+[2025-09-07 12:57:43,742: INFO: common: created directory at: artifacts/model_trainer]
+[2025-09-07 12:57:46,645: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`]
+[2025-09-07 12:59:39,015: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`]
+[2025-09-07 12:59:44,990: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-09-07 13:06:08,352: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 13:06:08,358: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:06:08,362: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:06:08,371: INFO: common: created directory at: artifacts]
+[2025-09-07 13:06:08,382: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 13:06:11,693: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7FE9:726D1:1A8C62:48E371:68BD306E
+Accept-Ranges: bytes
+Date: Sun, 07 Sep 2025 07:35:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10230-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1757230519.815039,VS0,VE252
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 066f2f4ffca7197834c3f6b8f06d641b1d3db550
+Expires: Sun, 07 Sep 2025 07:40:19 GMT
+Source-Age: 0
+
+]
+[2025-09-07 13:06:12,174: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:06:12,174: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-09-07 13:06:12,176: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:06:12,177: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:06:12,178: INFO: common: created directory at: artifacts]
+[2025-09-07 13:06:12,186: INFO: common: created directory at: artifacts/data_validation]
+[2025-09-07 13:06:12,222: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:06:12,222: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-09-07 13:06:12,225: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:06:12,226: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:06:12,227: INFO: common: created directory at: artifacts]
+[2025-09-07 13:06:12,238: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-07 13:06:14,186: WARNING: fingerprint: Parameter 'function'=<function DataTransformation.convert_examples_to_features at 0x0000020E643F0900> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.]
+[2025-09-07 13:06:18,760: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:06:18,760: INFO: main: *******************]
+[2025-09-07 13:06:18,760: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-09-07 13:06:18,763: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:06:18,764: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:06:18,773: INFO: common: created directory at: artifacts]
+[2025-09-07 13:06:18,789: INFO: common: created directory at: artifacts/model_trainer]
+[2025-09-07 13:06:29,007: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-09-07 13:09:49,709: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 13:09:49,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:09:49,723: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:09:49,724: INFO: common: created directory at: artifacts]
+[2025-09-07 13:09:49,726: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 13:09:49,729: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-09-07 13:09:50,104: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:09:50,104: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-09-07 13:09:50,106: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:09:50,107: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:09:50,110: INFO: common: created directory at: artifacts]
+[2025-09-07 13:09:50,113: INFO: common: created directory at: artifacts/data_validation]
+[2025-09-07 13:09:50,151: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:09:50,152: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-09-07 13:09:50,154: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:09:50,155: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:09:50,156: INFO: common: created directory at: artifacts]
+[2025-09-07 13:09:50,158: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-07 13:09:52,083: WARNING: fingerprint: Parameter 'function'=<function DataTransformation.convert_examples_to_features at 0x0000028741DDE660> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.]
+[2025-09-07 13:09:56,158: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:09:56,158: INFO: main: *******************]
+[2025-09-07 13:09:56,159: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-09-07 13:09:56,161: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:09:56,162: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:09:56,164: INFO: common: created directory at: artifacts]
+[2025-09-07 13:09:56,166: INFO: common: created directory at: artifacts/model_trainer]
+[2025-09-07 13:10:04,313: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-09-07 13:13:50,976: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 13:13:50,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:13:50,982: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:13:50,984: INFO: common: created directory at: artifacts]
+[2025-09-07 13:13:50,987: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 13:13:50,990: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-09-07 13:13:51,461: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:13:51,462: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-09-07 13:13:51,464: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:13:51,465: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:13:51,467: INFO: common: created directory at: artifacts]
+[2025-09-07 13:13:51,470: INFO: common: created directory at: artifacts/data_validation]
+[2025-09-07 13:13:51,520: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:13:51,521: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-09-07 13:13:51,524: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:13:51,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:13:51,529: INFO: common: created directory at: artifacts]
+[2025-09-07 13:13:51,535: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-07 13:13:53,530: WARNING: fingerprint: Parameter 'function'=<function DataTransformation.convert_examples_to_features at 0x000002A0ECCBE660> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.]
+[2025-09-07 13:13:58,699: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:13:58,700: INFO: main: *******************]
+[2025-09-07 13:13:58,700: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-09-07 13:13:58,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:13:58,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:13:58,708: INFO: common: created directory at: artifacts]
+[2025-09-07 13:13:58,712: INFO: common: created directory at: artifacts/model_trainer]
+[2025-09-07 13:14:07,326: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-09-07 13:17:04,167: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-07 13:17:04,170: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:17:04,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:17:04,174: INFO: common: created directory at: artifacts]
+[2025-09-07 13:17:04,176: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-07 13:17:04,178: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-09-07 13:17:04,605: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:17:04,605: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-09-07 13:17:04,607: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:17:04,608: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:17:04,610: INFO: common: created directory at: artifacts]
+[2025-09-07 13:17:04,613: INFO: common: created directory at: artifacts/data_validation]
+[2025-09-07 13:17:04,660: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:17:04,661: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-09-07 13:17:04,663: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:17:04,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:17:04,666: INFO: common: created directory at: artifacts]
+[2025-09-07 13:17:04,668: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-07 13:17:06,551: WARNING: fingerprint: Parameter 'function'=<function DataTransformation.convert_examples_to_features at 0x000002713821E660> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.]
+[2025-09-07 13:17:11,145: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-09-07 13:17:11,146: INFO: main: *******************]
+[2025-09-07 13:17:11,146: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-09-07 13:17:11,149: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-07 13:17:11,150: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-07 13:17:11,152: INFO: common: created directory at: artifacts]
+[2025-09-07 13:17:11,155: INFO: common: created directory at: artifacts/model_trainer]
+[2025-09-07 13:17:19,383: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "E:\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "E:\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
